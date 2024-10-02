@@ -1,7 +1,6 @@
-package com.httphealthcheck.actor
+package com.httphealthcheck.actor.timer
 
 import akka.actor.{Actor, Props}
-import com.httphealthcheck.config.Config
 
 import java.time.Duration
 
@@ -13,7 +12,7 @@ object TimerActor {
   case object Start
   case class Configure(action: () => Unit)
 
-  def props: Props = Props(new TimerActor(Config.healthCheckDelay))
+  def props(delay: Duration): Props = Props(new TimerActor(delay))
 
 }
 
