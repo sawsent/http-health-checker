@@ -1,6 +1,7 @@
-package com.httphealthcheck.actor.handler
+package com.httphealthcheck.opts.defaults
 
 import akka.actor.ActorRef
+import com.httphealthcheck.actor.handler.HandlerActor
 import com.httphealthcheck.actorsystem.GlobalActorSystem
 
 trait DefaultHandler extends GlobalActorSystem {

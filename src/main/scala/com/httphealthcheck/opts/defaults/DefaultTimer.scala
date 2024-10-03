@@ -1,4 +1,4 @@
-package com.httphealthcheck.actor.timer
+package com.httphealthcheck.opts.defaults
 
 import akka.actor.ActorRef
 import com.httphealthcheck.actorsystem.GlobalActorSystem
